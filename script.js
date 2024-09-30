@@ -1,46 +1,40 @@
-// Function to validate the login form inputs
+'use strict'
+
 function validateForm() {
-    // Get values from username and password fields
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    var valid = true; // Initially assume the form is valid
+    const fname = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const nameError = document.getElementById("name-error");
+    const passwordError = document.getElementById(
+        "password-error"
+    );
+    nameError.textContent = "";
+    passwordError.textContent = "";
 
-    // Check if the username field is empty
-    if (username === "") {
-        // Show error message if username is not provided
-        document.getElementById("nameError").innerText = "Username is required.";
-        valid = false;
-    } else {
-        // Clear the error message if username is provided
-        document.getElementById("nameError").innerText = "";
+    let isValid = true;
+
+    if (fname === ""  || /\d/.test(fname) || fname.length <= 3) {
+        nameError.textContent =
+            "Please enter your name properly.";
+        isValid = false;
     }
 
-    // Check if the password field is empty
-    if (password === "") {
-        // Show error message if password is not provided
-        document.getElementById("passwordError").innerText = "Password is required.";
-        valid = false;
-    } else {
-        // Clear the error message if password is provided
-        document.getElementById("passwordError").innerText = "";
+    // const pattern = /[A-Za-z\d@.#$!%*?&]{8,20}$/;
+    if (password === "" || password.length <= 4 || /\d/.test(password)) {
+        passwordError.textContent =
+            "Please enter a password with at least 4 characters";
+        isValid = false;
     }
 
-    // Return true if form is valid, otherwise false
-    return valid;
+    return isValid;
 }
-
-// Function to toggle password visibility
-function showPassword() {
-    // Get the password input field and the "Show" span element
-    var passwordInput = document.getElementById("password");
-    var showSpan = document.getElementById("showSpan");
-
-    // Toggle between password and text input types
-    if (passwordInput.type === "password") {
-        passwordInput.type = "text"; // Show the password
-        showSpan.innerText = "Hide"; // Update text to "Hide"
+function showPassword(){
+    const password = document.getElementById("password")
+    const showSpan = document.getElementById("showSpan")
+    if (password.type === 'password') {
+        password.type = 'text';  // Change the input type to text to show the password
+        showSpan.textContent = 'Hide';  // Update the text content of the showSpan to 'HIDE'
     } else {
-        passwordInput.type = "password"; // Hide the password
-        showSpan.innerText = "Show"; // Update text to "Show"
+        password.type = 'password';  // Change the input type back to password to hide the password
+        showSpan.textContent = 'Show';  // Update the text content of the showSpan to 'SHOW'
     }
 }

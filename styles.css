@@ -1,136 +1,302 @@
-/* Importing Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-/* Universal styles */
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: "Mulish", sans-serif;
+    
 }
-
-/* Style for body: no scroll overflow */
-body {
+body{
     overflow: hidden;
-}
 
-/* Main container for the layout */
-.container {
+}
+.container{
     display: flex;
+    /* justify-content: center; */
     color: #585858;
+    /* height: 100vh; */
 }
-
-/* Left and Right sections both take up 100% width */
-.left, .right {
-    width: 100%;
+.left,.right{
+    /* height: 100vh; */
+   width: 100%;
+    
 }
-
-/* Styles for the left section */
-.left {
+.left{
     padding: 2% 4% 4% 4%;
     background-color: #FFFBF6;
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* justify-content: center; */
 }
-
-/* Logo styles */
-.logoDiv .logo {
+.logoDiv .logo{
     width: 90px;
     height: 110px;
 }
-
-/* Header text in the left section */
-.leftTextDiv h1 {
+.leftTextDiv h1{
     font-weight: 700;
     font-size: 42px;
     line-height: 52.71px;
-    margin-top: 20px;
+    margin-top: 20px;   
 }
 
-/* Paragraph under header */
-.leftTextDiv p {
+.leftTextDiv p{
     font-weight: 400;
     font-size: 18px;
+    line-height: 22.59px;
     color: #AFB0B1;
 }
-
-/* Form labels */
-.formContainer label {
+.leftTextDiv span{
+    font-size: 12px;
+    color: #AFB0B1;
+    line-height: 22.59px;
+    font-weight: 700;
+}
+/* .formContainer{
+    width: 80%;
+    margin-top: 20px;
+} */
+.formContainer label{
     font-size: 16px;
     font-weight: 400;
+    line-height: 20.08px;
     color: #000000;
 }
-
-/* Form input wrapper for icons and input */
+.formContainer span, .pSpanDiv p{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.06px;
+    color: #7F8B94;
+}
+.form-group {
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    padding: 20px;
+    position: relative;
+    border-radius: 5px;
+    /* box-shadow: 4px 20px 7px rgba(0, 0, 0, 0.06)#0000000F;  */
+    box-shadow: 0px 20px 70px 0px rgba(0, 0, 0, 0.06);
+    /* max-width: 65%; */
+    /* max-height: 100px;
+    max-width: 474px; */
+}
+  
 .input-wrapper {
     margin-top: 2%;
     position: relative;
 }
-
+  
 .input-wrapper i {
     position: absolute;
     right: 10px;
     top: 30%;
+    color: #7a7777;
 }
-
-/* Input fields */
-.input-wrapper input {
+  
+  .input-wrapper input {
     border: none;
     border-radius: 4px;
     width: 90%;
+    height: 20px;
     background: transparent;
     outline: none;
+  }
+  .input-wrapper input::placeholder{
+    color: #AFB0B1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.08px;
+  }
+.form-group span{
+    position: absolute;
+    right: 25px;
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12.55px;
+    color: #EE5331;
 }
-
-/* Submit button */
-.btn {
+.pDiv{
+    display: flex;
+    /* gap: 40%; */
+    justify-content: space-between;
+    /* max-width: 80%; */
+}
+.pSpanDiv{
+    display: inline-flex;
+    gap: 6px;
+}
+.pSpanDiv input{
+    outline: none;
+    /* border: none;
+    border: 1px solid #7F8B94; */
+}
+.btn{
     width: 100%;
     font-size: 24px;
     font-weight: 700;
+    line-height: 30.12px;
     color: white;
     margin-top: 20px;
     border: none;
+    box-shadow: 0px 40px 70px 0px #FF7A001A;
     background-color: #FF7A00;
     border-radius: 5px;
     height: 71px;
+    /* padding: 3%; */
 }
 
-/* Right section with background image */
-.right {
-    background-image: url('/image/BrokerPortal1.png');
+.right{
+    background-image: url('../img/BrokerPortal1.png');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* position: relative; */
 }
-
-/* Help container in the right section */
-.helpContainer {
+.helpContainer{
     display: flex;
+    gap: 5px;
+    flex-direction: row;
     justify-content: flex-end;
     margin-top: 30px;
+    margin-right: 35px;
     color: white;
 }
+/* .helpIcon{
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    padding: 3px;
+    font-size: 12px;
+} */
+.helpContainer span{
+    font-weight: 600;
+    font-size: 18px;
+}
+.GroupContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 450px ;
+    margin-inline: auto;
+    width: 80%;
+}
 
-/* Responsive styles for mobile screens */
-@media screen and (max-width: 767px) {
-    body {
+.groupIcon{
+    width: 131px;
+    height: 110px;
+    border-radius: 10px 0 0 10px;
+    background-color: #f3f5f6;
+    text-align: center;
+}
+.groupIcon img{
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+.groupDetails{
+    width: 380px;
+    height: 110px;
+    border-radius: 0px 10px 10px 0px;
+    background-color: white;
+}
+.groupDetails h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22.59px;
+    margin: 14px 16px;
+}
+.groupDetails p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.57px;
+    margin: 0px 16px;
+}
+
+.small{
+    display: none;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 767px){
+    body{
+        overflow-x: hidden;
         overflow-y: scroll;
     }
-    .right {
+    .right{
         display: none;
     }
-    .left {
+    .left{
         display: block;
         padding: 10% 4% 4%;
         width: 100%;
     }
-    .btn {
+    .leftTextDiv h1{
+        margin-top: 50px; 
+        line-height: 48px;
+    }
+    .pDiv{
+        max-width: 93%;
+    }
+    .btn{
         width: 95%;
     }
 }
 
-/* Larger screens (min-width: 1400px) */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    body{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .left{
+        display: block;
+        padding: 4% 0% 4% 4%;
+    }
+    .helpIcon .large{
+        display: none;
+    }
+    .leftTextDiv h1{
+        margin-top: 100px; 
+    }
+    .small{
+        display: block;
+    }
+    .formContainer label{
+        font-size: 20px;
+    }
+    .input-wrapper input::placeholder{
+        font-size: 18px;
+      }
+    .formContainer span, .pSpanDiv p{
+        font-size: 16px;
+    }
+    .form-group{
+        max-width: 90%;
+    }
+    .btn{
+        width: 95%;
+    }
+    .form-group span{
+        font-size: 16px;
+        color: #EE5331;
+    }
+    .pDiv{
+        max-width: 93%;
+    }
+    .right{
+        display: none;
+    }
+}
+
 @media screen and (min-width: 1400px) {
-    .container {
+    .container{
         margin: 5% auto;
         max-width: 90%;
+        height: auto;
     }
 }
