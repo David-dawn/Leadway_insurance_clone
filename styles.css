@@ -1,0 +1,136 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* Universal styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+}
+
+/* Style for body: no scroll overflow */
+body {
+    overflow: hidden;
+}
+
+/* Main container for the layout */
+.container {
+    display: flex;
+    color: #585858;
+}
+
+/* Left and Right sections both take up 100% width */
+.left, .right {
+    width: 100%;
+}
+
+/* Styles for the left section */
+.left {
+    padding: 2% 4% 4% 4%;
+    background-color: #FFFBF6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo styles */
+.logoDiv .logo {
+    width: 90px;
+    height: 110px;
+}
+
+/* Header text in the left section */
+.leftTextDiv h1 {
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 52.71px;
+    margin-top: 20px;
+}
+
+/* Paragraph under header */
+.leftTextDiv p {
+    font-weight: 400;
+    font-size: 18px;
+    color: #AFB0B1;
+}
+
+/* Form labels */
+.formContainer label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+}
+
+/* Form input wrapper for icons and input */
+.input-wrapper {
+    margin-top: 2%;
+    position: relative;
+}
+
+.input-wrapper i {
+    position: absolute;
+    right: 10px;
+    top: 30%;
+}
+
+/* Input fields */
+.input-wrapper input {
+    border: none;
+    border-radius: 4px;
+    width: 90%;
+    background: transparent;
+    outline: none;
+}
+
+/* Submit button */
+.btn {
+    width: 100%;
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-top: 20px;
+    border: none;
+    background-color: #FF7A00;
+    border-radius: 5px;
+    height: 71px;
+}
+
+/* Right section with background image */
+.right {
+    background-image: url('/image/BrokerPortal1.png');
+    background-size: cover;
+}
+
+/* Help container in the right section */
+.helpContainer {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+    color: white;
+}
+
+/* Responsive styles for mobile screens */
+@media screen and (max-width: 767px) {
+    body {
+        overflow-y: scroll;
+    }
+    .right {
+        display: none;
+    }
+    .left {
+        display: block;
+        padding: 10% 4% 4%;
+        width: 100%;
+    }
+    .btn {
+        width: 95%;
+    }
+}
+
+/* Larger screens (min-width: 1400px) */
+@media screen and (min-width: 1400px) {
+    .container {
+        margin: 5% auto;
+        max-width: 90%;
+    }
+}

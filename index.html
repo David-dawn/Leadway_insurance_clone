@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta information and external resources -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="David Amosu">
+    <link rel="stylesheet" href="styles.css"> <!-- Linking external stylesheet -->
+    <title>Underwrite Dashboard</title>
+    <!-- Font Awesome script for icons -->
+    <script src="https://kit.fontawesome.com/96fccda491.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Main container for layout -->
+    <main class="container">
+        <!-- Left section: contains the login form -->
+        <section class="left">
+            <div class="leftContainer">
+                <!-- Logo for the company -->
+                <div class="logoDiv">
+                    <img class="logo" src="./image/New Leadway Logo 1.png" alt="Leadway assurance logo">
+                </div>
+                <!-- Welcome text -->
+                <div class="leftTextDiv">
+                    <h1>Underwrite Dashboard</h1>
+                    <p>Welcome. Login to your portal account.</p>
+                </div>
+                <!-- Login form -->
+                <div class="formContainer">
+                    <!-- Form redirects to overview.html after successful login -->
+                    <form action="./overview/overview.html" name="myForm" onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <!-- Username input field -->
+                            <label for="username">Login ID</label>
+                            <div class="input-wrapper">
+                                <i><img src="./image/user (1).png" alt="user"></i>
+                                <input type="text" id="username" name="username" placeholder="enter your login ID">
+                            </div>
+                            <!-- Error message for username -->
+                            <span id="nameError" class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <!-- Password input field -->
+                            <label for="password">Password</label>
+                            <!-- Button to toggle password visibility -->
+                            <span id="showSpan" onclick="showPassword()">Show</span>
+                            <div class="input-wrapper">
+                                <i><img src="./image/lock.png" alt="lock"></i>
+                                <input type="password" id="password" name="password" placeholder="enter your password">
+                            </div>
+                            <!-- Error message for password -->
+                            <span id="passwordError" class="error-message"></span>
+                        </div>
+                        <!-- Options for keeping the user logged in and resetting password -->
+                        <div class="pDiv">
+                            <div class="pSpanDiv">
+                                <input type="checkbox" name="check" id="check">
+                                <p>Keep me logged in</p>
+                            </div>
+                            <span>Reset Password</span>
+                        </div>
+                        <!-- Submit button -->
+                        <button class="btn" type="submit">Login</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Right section: includes additional help and customer management information -->
+        <section class="right">
+            <!-- Help icon -->
+            <div class="helpContainer">
+                <div class="helpIcon">
+                    <img src="./image/question (1).png" alt="Help icon">
+                </div>
+                <span>Help</span>
+            </div>
+            <!-- Customer Management info -->
+            <div class="GroupContainer group1">
+                <div class="groupIcon">
+                    <img src="./image/_Group_.png" alt="Group Icon">
+                </div>
+                <div class="groupDetails">
+                    <h4>Customer Management</h4>
+                    <p>
+                        Manage all customers from individual customers to corporate or group customers.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- External JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
