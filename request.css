@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/* THIS ONE STYLE IS FOR THREE TABLES, ALL REQUEST, ONGOING REQUEST AND COMPLETED REQUEST */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+  text-decoration: none;
+}
+body{
+  display: grid;
+  grid-template-columns:  repeat(9, 1fr);
+  grid-template-areas: 
+  "ht hd hd hd hd hd hd hd hd"
+  "ht al al al al al al al al";
+} 
+.nav-icons-container{
+  grid-area: ht;
+}
+
+.horizontal-nav{
+  grid-area: hd;
+}
+
+.container {
+  grid-area: al;
+  width: 90%;
+  margin: 8% 0% 0% 8%;
+  /* margin-right: 2%; */
+}
+
+/*================================INSPECTION HEADER STYLE  ===============================================*/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 27.61px;
+  text-align: left;
+  color: #34475e;
+}
+.header p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.06px;
+  text-align: left;
+  padding: 2px;
+}
+/*=========================================INSPECTION HEADER CREATE BUTTON====================================== */
+.createBtnDiv{
+  display: flex;
+}
+.create-button {
+  background-color: #ff7a00;
+  color: white;
+  width: 195px;
+  height: 38px;
+  font-size: 12.83px;
+  padding: 11px 19px 11px 16px;
+  border-radius: 3.21px;
+}
+.fa-plus {
+  margin-right: 2%;
+}
+
+/*===================================================== TABS STYLE =========================================*/
+.tabs-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  /* flex-direction: row; */
+  margin-top: 5%;
+}
+.tabs {
+  max-width: 300px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* margin-top: 30px; */
+  background-color: #eeeeee;
+  border: none;
+  padding: 3px 8px 3px 3px;
+  border-radius: 8px;
+}
+
+.tabs a {
+  width: 80px;
+  height: 25px;
+  font-size: 12px;
+  margin-top: 2px;
+  padding: 3px 2px;
+  color: #2f2f2f;
+  text-align: center;
+}
+.tabs a.active {
+  width: 96px;
+  border: 1px solid #EEEEEE;
+  background-color: #fff;
+  border-radius: 6px;
+  font-weight: bold;
+  padding: 3px;
+  box-shadow: 0px 4px 40px -15px #00000040;
+}
+/*  ===================== Additional CSS for search input with icon ======================*/
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-container .fa-search {
+  position: absolute;
+  left: 10px;
+  color: #aaa;
+}
+
+.search-container input {
+  padding-left: 30px; 
+  width: 200px;
+  height: 25px;
+  padding: 5px 6px 5px 30px; 
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.filters-search-container{
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 5px 16px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.filters-search-container i{
+    position: absolute;
+    left: 10px;
+    top: 30%;
+    color: #aaa;
+}
+.filters-search-container input {
+  border: none;
+  border-radius: 4px;
+  padding-left: 20px;
+  outline: none;
+}
+/* FILTERS STYLE */
+.filters {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.filters select,
+span {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 12px;
+}
+/* MARINE DOT */
+.dot {
+  border: none;
+  color: #6941c6;
+}
+
+
+/* Additional styling for the page */
+.tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+.header-search-container {
+  display: none;
+}
+
+/* ==================TABLE STYLE===================== */
+
+.table-container {
+  font-family: "Roboto", sans-serif;
+  height: 52vh;
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 20px;
+  border: 1px solid #eeeeee;
+  border-radius: 5px;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+  border: none;
+}
+th,
+td {
+  border: none;
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+thead {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.06px;
+  text-align: left;
+  color: #7f8b94;
+}
+tbody {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15.06px;
+  text-align: left;
+  color: #2f2f2f;
+}
+
+/*=========================================== STATUS STYLE============================= */
+.status {
+  text-align: center;
+  width: 73px;
+  height: 20px;
+  padding: 4px 14px;
+  border: none;
+  gap: 4px;
+  border-radius: 3px;
+  font-size: 11px;
+  line-height: 18px;
+  text-align: center;
+}
+.status.ongoing {
+  background-color: #ffdebf;
+  color: #ff7a00;
+}
+.status.completed {
+  font-weight: 500;
+  background-color: #ecfdf3;
+  color: #027a48;
+}
+/* RESPONSIVE STYLE  */
+@media screen and (max-width: 768px) {
+  body{
+    display: block;
+  }
+  .container {
+    margin: 15% 2% 0%;
+    width: 96%;
+  }
+  .header{
+    display: block;
+  }
+  .createBtnDiv{
+    justify-content: end;
+    margin-top: 5%;
+  }
+  .create-button {
+    text-align: center;
+    height: 28px;
+    padding: 5px 2px;
+  }
+  .search-container input{
+    width: 150px;
+  }
+  .filters-search-container input{
+    width: 80px;
+  }
+  .tabs-filter-container {
+    flex-direction: column;
+
+  }
+  .filters {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  body{
+    display: block;
+  }
+  .container {
+    margin: 10% 2% 0%;
+    width: 96%;
+  }
+} 
+
+@media screen and (min-width: 1024px) and (max-width: 1198px){
+  .container {
+    margin: 10% 0% 0% 17%;
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1199px) and (max-width: 1399px){
+  .container {
+    margin: 8% 0% 0% 12%;
+    width: 85%;
+  }
+}

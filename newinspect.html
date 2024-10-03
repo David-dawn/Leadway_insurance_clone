@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Nav.css">
+    <link rel="stylesheet" href="newinspect.css">
+    <title>New Inspection</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script
+    src="https://kit.fontawesome.com/96fccda491.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+    <header class="NavHeader">
+        <!-- Toggle button for mobile view -->
+        <span id="toggle-btn" class="toggle-btn">&#9776;</span>
+        <!-- Aside Nav -->
+        <nav id="mySidenav" class="aside-nav">
+          <a href="javascript:void(0)" class="closebtn"
+            >&times;</a
+          >
+          <div id="nav-icons-container" class="nav-icons-container">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    class="navIcons"
+                    src="/image/barcode-vector.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="BgWhite">
+                <a href="#"
+                  ><img class="navIcons" src="/image/reg-Vector.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img class="navIcons" src="/image/bag-Vector.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img class="navIcons" src="/image/icons.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="navIcons"
+                    src="/image/pie-chart-2.png"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="navIcons"
+                    src="/image/setting-vector.png"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="logo">
+            <a href='overview.html'>
+              <img
+              class="leadwayLogo"
+              src="/image/LAC Logo Alt 2.png"
+              alt="Leadway Logo"
+              /> 
+          </a>
+            <div class="logo-content">
+              <p>TRM</p>
+              <ul>
+                <li>
+                  <a class='overview' href='overview.html' id='overview'>
+                    <img src="/image/Group 126.svg" alt="overview icons" id="overviewImg">
+                    Overview
+                  </a>
+                </li>
+                <li>
+                  <a href='allrequest.html' id='request'>
+                    <img src="/image/Vector.svg" alt="overview icons" id="requestImg">
+                    Request
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- Horizontal Nav //notification, profile & acct profile -->
+        <nav class="horizontal-nav">
+          <div class="horizontal-nav-container">
+            <img
+              class="notification"
+              src="/image/notification.png"
+              alt="notification icon"
+              />
+            <div class="user-initials"><p>AM</p></div>
+            <p class="acct">
+              Adesola <span><img src="/image/dropdown.png" alt="" /></span>
+            </p>
+          </div>
+        </nav>
+      </header>
+    <main class="NewInspectContainer newInspectCont">
+        <div class="NewHeadContent">
+            <div class="head1">
+                <h1>Create New Inspection</h1>
+                <p>See Inspections across all business classes</p>
+            </div>
+            <div class="head2">
+                <a href='overview.html'>
+                  <i class="fa-solid fa-xmark"></i>
+                  <p>close</p>
+                </a>
+            </div>
+        </div>
+        <div class="centerItems">
+            <div class="InspectCardList">
+                <div class="CardList" id="preLoss">
+                    <div class="roundedImg">
+                        <img src="/image/carbon_chart-win-loss.png" alt="">
+                    </div>
+                    <p>Pre-loss Inspection</p>
+                </div>
+                <div class="CardList list2" id="postLoss">
+                    <div class="roundedImg">
+                        <img src="/image/carbon_chart-win-loss.png" alt="">
+                    </div>
+                    <div class="arrow">
+                        <img src="/image/Arrow 1.png" alt="">
+                    </div>
+                    <p>Post-loss Inspection</p>
+                </div>
+            </div>
+            <div class="custom-select-wrapper">
+                <p>Choose a class</p>
+                <select class="custom-select" id="customSelect">
+                    <option value="motors">&#128992; &nbsp; Motors</option>
+                    <option value="property" data-color="#6A0DAD" selected="selected">🔵 &nbsp;Property</option>
+                    <option value="marine" data-color="#6A0DAD">🟣&nbsp; Marine</option>
+                    <option value="agric" data-color="#00FF00">🟢&nbsp; Agric</option>
+                    <option value="bond" data-color="#FFD700">🟡&nbsp; Bond</option>
+                    <option value="engineering" data-color="#FF0000">🔴&nbsp; Engineering</option>
+                </select>
+            </div>
+            <div class="btnDiv">
+                <button type="submit" class="btn" id="btn">
+                    <i class='bx bx-right-arrow-circle bx-sm' style='color:#ffffff'  ></i>
+                    <p>Create Request</p>
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="inspect.js"></script>
+<script src="nav.js"></script>
+</html>

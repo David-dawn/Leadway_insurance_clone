@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Nav.css">
+    <link rel="stylesheet" href="request.css" />
+    <script
+      src="https://kit.fontawesome.com/96fccda491.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Inspection List</title>
+  </head>
+  <body>
+    <header class="NavHeader">
+      <!-- Toggle button for mobile view -->
+      <span id="toggle-btn" class="toggle-btn">&#9776;</span>
+      <!-- Aside Nav -->
+      <nav id="mySidenav" class="aside-nav">
+        <a href="javascript:void(0)" class="closebtn"
+          >&times;</a
+        >
+        <div id="nav-icons-container" class="nav-icons-container">
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  class="navIcons"
+                  src="/image/barcode-vector.png"
+                  alt=""
+              /></a>
+            </li>
+            <li class="BgWhite">
+              <a href="#"
+                ><img class="navIcons" src="/image/reg-Vector.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="navIcons" src="/image/bag-Vector.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="navIcons" src="/image/icons.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="navIcons"
+                  src="/image/pie-chart-2.png"
+                  alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="navIcons"
+                  src="/image/setting-vector.png"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href='overview.html'>
+            <img
+            class="leadwayLogo"
+            src="/image/LAC Logo Alt 2.png"
+            alt="Leadway Logo"
+            /> 
+        </a>
+          <div class="logo-content">
+            <p>TRM</p>
+            <ul>
+              <li>
+                <a class='overview' href='overview.html' id='overview'>
+                  <img src="/image/Group 126.svg" alt="overview icons" id="overviewImg">
+                  Overview
+                </a>
+              </li>
+              <li>
+                <a href='allrequest.html' id='request'>
+                  <img src="/image/Vector.svg" alt="overview icons" id="requestImg">
+                  Request
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Horizontal Nav //notification, profile & acct profile -->
+      <nav class="horizontal-nav">
+        <div class="horizontal-nav-container">
+          <img
+            class="notification"
+            src="/image/notification.png"
+            alt="notification icon"
+            />
+          <div class="user-initials"><p>AM</p></div>
+          <p class="acct">
+            Adesola <span><img src="/image/dropdown.png" alt="" /></span>
+          </p>
+        </div>
+      </nav>
+    </header>
+    <!-- Main container -->
+    <div class="container">
+      <div class="header">
+        <div>
+          <h1>Inspection List</h1>
+          <p>See Inspections across all business classes</p>
+        </div>
+        <div class="createBtnDiv">
+          <a class='create-button' href='newinspect.html'>
+            <i class="fa-solid fa-plus" style="color: #f4f7fa"></i>
+            Create New Inspection
+          </a>
+          <div class="header-search-container">
+            <div class="search-container">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="Search" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+      <div class="tabs-filter-container">
+        <div class="tabs">
+          <a href="#" class="tab-link active" data-tab="all-requests"
+            >All Requests</a
+          >
+          <a href="#" class="tab-link" data-tab="ongoing">Ongoing</a>
+          <a href="#" class="tab-link" data-tab="completed">Completed</a>
+        </div>
+        <div class="filters">
+          <div class="filters-search-container"> 
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Search" />
+          </div>
+          <div class="marine">
+            <span><span class="dot">&#9679;</span> Marine &times;</span>
+          </div>
+          <select>
+            <option>Sort by: Class</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ===========================================ALL REQUESTS TAB CONTENT =================-->
+      <div id="all-requests" class="tab-content active table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Date</th>
+              <th>Name</th>
+              <th>Inspection method</th>
+              <th>Officer</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10321</td>
+              <td>15/06/2023</td>
+              <td>Rovenheights properties</td>
+              <td>Digital</td>
+              <td>Mustapha Onasanya</td>
+              <td>
+                <a href='/details/rovenheight'>
+                  <span class="status ongoing">Ongoing</span>
+                </a>
+              </td>
+            </tr>
+            <tr>
+              <td>10321</td>
+              <td>12/06/2023</td>
+              <td>Shoprite Stores</td>
+              <td>Manual</td>
+              <td>Mustapha Onasanya</td>
+              <td><span class="status completed">Completed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!--=========================== ONGOING TAB CONTENT============================== -->
+      <div id="ongoing" class="tab-content table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Date</th>
+              <th>Name</th>
+              <th>Inspection method</th>
+              <th>Officer</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10321</td>
+              <td>15/06/2023</td>
+              <td>Rovenheights properties</td>
+              <td>Digital</td>
+              <td>Mustapha Onasanya</td>
+              <td><span class="status ongoing">Ongoing</span></td>
+            </tr>
+            <tr>
+              <td>10321</td>
+              <td>12/06/2023</td>
+              <td>Shoprite Stores</td>
+              <td>Manual</td>
+              <td>Mustapha Onasanya</td>
+              <td><span class="status ongoing">Ongoing</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- ===================================COMPLETED TAB CONTEN===================================T -->
+      <div id="completed" class="tab-content table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Date</th>
+              <th>Name</th>
+              <th>Inspection method</th>
+              <th>Officer</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10321</td>
+              <td>15/06/2023</td>
+              <td>Rovenheights properties</td>
+              <td>Digital</td>
+              <td>Mustapha Onasanya</td>
+              <td><span class="status completed">Completed</span></td>
+            </tr>
+            <tr>
+              <td>10321</td>
+              <td>12/06/2023</td>
+              <td>Shoprite Stores</td>
+              <td>Manual</td>
+              <td>Mustapha Onasanya</td>
+              <td><span class="status completed">Completed</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="allrequest.js"></script>
+    <script src="nav.js"></script>
+  </body>
+</html>

@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Mulish", sans-serif;
+    text-decoration: none;  
+}
+
+  /* modal1 popup */
+  .hidden {
+    display: none;
+  }
+  
+.modal {
+    position: absolute;
+    top: 100%;
+    left: 28%;
+    /* transform: translate(-50%, -50%); */
+    width: 40%;
+    box-shadow: 0px 3.06px 30.61px 0px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    padding: 2%;
+    border-radius: 5px;
+    z-index: 10;
+}
+.info-h1{
+    font-size: 20.66px;
+    font-weight: 600;
+    line-height: 25.93px;
+    color: #34475E;
+    margin-bottom: 3%;
+}
+.info-text{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17.57px;
+    color: #9F9F9F;
+    margin-bottom: 3%;
+}
+.aDiv{
+    text-align: right;
+    line-height: 16.41px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+}
+
+.aColor{
+    font-weight: 400;
+    margin-right: 15px;
+    color: #FF7A00;
+}
+.abtn{
+    padding: 2% 3%;
+    background-color: #FF7A00;
+    color: white;
+    border-radius: 2.75px;
+    /* border: none; */
+}
+
+.close {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 3rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 192%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* backdrop-filter: blur(3px); */
+    z-index: 5;
+  }
+
+  /* MOdal 2 congratulartion */
+  .modal2{
+    position: absolute;
+    top: 30%;
+    left: 28%;
+    /* transform: translate(-50%, -50%); */
+    box-shadow: 0px 3.06px 30.61px 0px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    padding: 2%;
+    border-radius: 5px;
+    z-index: 10;
+    text-align: center;
+    padding: 4%;
+    width: 30%;
+  }
+  .congrat{
+    width: 100px;
+    height: 100px;
+  }
+  .info{
+    font-family: "Roboto", sans-serif;
+    font-size: 15.57px;
+    font-weight: 700;
+    line-height: 19.73px;
+    color: #00B388;
+    margin: 10% 0;
+  }
+  .modal2 .aDiv{
+    text-align: center;
+  }
+  .aBtnGray{
+    padding: 2% 3%;
+    color:black;
+    border-radius: 2.75px;
+    border: 1.23px solid #9FA8AF;
+    margin-right: 15px;
+  }
+
+  .input-wrapper .country-code {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #000;
+    margin-right: 10px;
+}
+
+.input-wrapper input {
+    padding-left: 50px; /* Adds space for the country code */
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 756px){
+
+    .btn {
+        width: 50%;
+        font-size: 18px;
+    }
+    /* Modal mobile */
+    .modal,.modal2 {
+        top: 90%;
+        left: 4%;
+        width: 90%;
+        font-size: 20px;
+        padding: 10%;
+      }
+      .modal2{
+        top: 30%;
+        padding: 5%;
+      } 
+    .info-text{
+        margin-top: 6%;
+        margin-bottom: 6%;
+    }
+      .overlay{
+        backdrop-filter: blur(1px);
+        height: 175%;
+      }
+    .modal2 .aBtnGray, .modal2 .abtn{
+        padding: 2% 2%;
+    }
+    .modal2 .aBtnGray{
+        margin-right: 2px;
+        /* visibility: ; */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    /* Modal tablet */
+    .modal,.modal2 {
+        top: 30%;
+        left: 4%;
+        width: 90%;
+        /* font-size: 20px; */
+        padding: 10%;
+      }
+      .info-h1{
+        font-size: 30px;
+      }
+    .info-text{
+        margin-top: 6%;
+        margin-bottom: 6%;
+        font-size: 20px;
+    }
+    .info{
+        font-size: 20px;
+    }
+    .congrat{
+        width: 130px;
+        height: 130px;
+    }
+    .aDiv{
+        font-size: 19px;
+    }
+      .overlay{
+        backdrop-filter: blur(1px);
+        height: 100%;
+      }
+}

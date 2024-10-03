@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Loss Inspection</title>
+    <link rel="stylesheet" href="Nav.css" />
+    <link rel="stylesheet" href="/css/request.css" />
+    <link rel="stylesheet" href="/css/modal.css" />
+    <script
+      src="https://kit.fontawesome.com/96fccda491.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="NavHeader">
+      <!-- Toggle button for mobile view -->
+      <span id="toggle-btn" class="toggle-btn">&#9776;</span>
+      <!-- Aside Nav -->
+      <nav id="mySidenav" class="aside-nav">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <div id="nav-icons-container" class="nav-icons-container">
+          <ul>
+            <li>
+              <a href="#"
+                ><img class="navIcons" src="/image/barcode-vector.png" alt=""
+              /></a>
+            </li>
+            <li class="BgWhite">
+              <a href="#"
+                ><img class="navIcons" src="/image/reg-Vector.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="navIcons" src="/image/bag-Vector.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="navIcons" src="/image/icons.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="navIcons" src="/image/pie-chart-2.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="navIcons" src="/image/setting-vector.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="overview.html">
+            <img
+              class="leadwayLogo"
+              src="/image/LAC Logo Alt 2.png"
+              alt="Leadway Logo"
+            />
+          </a>
+          <div class="logo-content">
+            <p>TRM</p>
+            <ul>
+              <li>
+                <a class="overview" href="overview.html" id="overview">
+                  <img
+                    src="/image/Group 126.svg"
+                    alt="overview icons"
+                    id="overviewImg"
+                  />
+                  Overview
+                </a>
+              </li>
+              <li>
+                <a href="allrequest.html" id="request">
+                  <img
+                    src="/image/Vector.svg"
+                    alt="overview icons"
+                    id="requestImg"
+                  />
+                  Request
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Horizontal Nav //notification, profile & acct profile -->
+      <nav class="horizontal-nav" id="horizontal-nav">
+        <div class="horizontal-nav-container">
+          <img
+            class="notification"
+            src="/image/notification.png"
+            alt="notification icon"
+          />
+          <div class="user-initials"><p>AM</p></div>
+          <p class="acct">
+            Adesola <span><img src="/image/dropdown.png" alt="" /></span>
+          </p>
+        </div>
+      </nav>
+    </header>
+    <main class="NewInspectContainer">
+      <div class="NewHeadContent preLossHeadContent">
+        <div class="head1">
+          <h1>Create New Inspection</h1>
+          <p>See Inspections across all business classes</p>
+        </div>
+        <div class="head2p">
+          <a href="newinspect.html">
+            <i class="fa-solid fa-angle-left"></i>
+            Back to create request
+          </a>
+        </div>
+      </div>
+      <!-- Form Container -->
+      <section id="preLossForm">
+        <div class="formContainer">
+          <div class="formH1">
+            <p>Post-Loss Link Generation(optional)</p>
+          </div>
+          <div class="formDiv">
+            <form action="" id="inspectForm">
+              <!-- first Group -->
+              <div class="group">
+                <!-- first input -->
+                <div class="form-group">
+                  <label for="username">Policy Number(optional)</label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass i"></i>
+                    <input type="text" id="username" name="username" />
+                  </div>
+                </div>
+                <!-- second input"> -->
+                <div class="form-group">
+                  <label for="username">Claim number(optional)</label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass i"></i>
+                    <input type="text" id="username" name="username" />
+                  </div>
+                </div>
+              </div>
+              <!-- second group -->
+              <div class="group group1">
+                <!-- first input -->
+                <div class="form-group">
+                  <label for="username">Client First Name</label>
+                  <div class="input-wrapper">
+                    <input type="text" id="username" name="username" />
+                  </div>
+                </div>
+                <!-- second input -->
+                <div class="form-group">
+                  <label for="username">Client Last name</label>
+                  <div class="input-wrapper">
+                    <input type="text" id="username" name="username" />
+                  </div>
+                </div>
+                <!-- third input -->
+                <div class="form-group">
+                  <label for="username">Client Phone number</label>
+                  <div class="input-wrapper">
+                    <p>+234 <i class="fa-solid fa-angle-down"></i></p>
+                    <input type="tel" id="username" name="username" />
+                  </div>
+                </div>
+                <!-- fourth input -->
+                <div class="form-group">
+                  <label for="username">Client Email address</label>
+                  <div class="input-wrapper">
+                    <input type="email" id="username" name="username" />
+                  </div>
+                </div>
+              </div>
+              <!-- thrid Group -->
+              <div class="group group1">
+                <!-- first input -->
+                <div class="form-group">
+                  <label for="username">Vehicle make</label>
+                  <div class="input-wrapper">
+                    <select class="custom-select" id="customSelect">
+                      <option value="motors">Select a language</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- second input -->
+                <div class="form-group">
+                  <label for="username">Vehicle model</label>
+                  <div class="input-wrapper">
+                    <!-- <i class="fa-solid fa-magnifying-glass i"></i> -->
+                    <input type="text" id="username" name="username" />
+                  </div>
+                </div>
+                <!-- third input -->
+                <div class="form-group">
+                  <label for="username">Registration number</label>
+                  <div class="input-wrapper">
+                    <!-- <i class="fa-solid fa-magnifying-glass i"></i> -->
+                    <input type="text" id="username" name="username" />
+                  </div>
+                </div>
+                <!-- fourth input -->
+                <div class="form-group">
+                  <label for="username">Year</label>
+                  <div class="input-wrapper">
+                    <select class="custom-select" id="customSelect">
+                      <option value="motors">Select a language</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- fourth group -->
+              <div class="group group2">
+                <div class="form-group">
+                  <label for="username">Comments</label>
+                  <div class="textarea">
+                    <textarea name="desc" id="desc"></textarea>
+                    <p>Attach document</p>
+                  </div>
+                  <!-- <p>Attach document</p> -->
+                </div>
+              </div>
+              <div class="SubmitDiv">
+                <button class="Buttonn show-modal" id="btn">Generate</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- modal 1 -->
+      <section class="modal1">
+        <!-- <button class="btn show-modal" id="btn">Compute BMI</button> -->
+
+        <div class="modal hidden">
+          <h1 class="info-h1">Send to TRM</h1>
+          <p class="info-text">Are you sure you want to send this request?</p>
+          <div class="aDiv">
+            <a href="#" class="aColor close-modal">Cancel</a>
+            <button class="abtn SuccessModal">Submit</button>
+          </div>
+        </div>
+
+        <div class="overlay hidden"></div>
+      </section>
+      <!-- modal 2 -->
+      <section id="modal2">
+        <!-- <button class="btn SuccessModal" id="btn">Compute BMI</button> -->
+
+        <div class="modal2 hidden">
+          <div class="">
+            <button class="close-modal2 close">&times;</button>
+          </div>
+
+          <img
+            src="/image/Group 383.png"
+            alt="congratulation"
+            class="congrat"
+          />
+
+          <p class="info">
+            You’ve successfully created new <br />
+            Inspection ID-23321 for PRIME GARDENS
+          </p>
+          <div class="aDiv">
+            <a class="aBtnGray" href="allrequest.html">Go to request list</a>
+            <a class="abtn" href="/newinspect.html">Create New Inspection</a>
+          </div>
+        </div>
+        <div class="overlay2 hidden"></div>
+      </section>
+    </main>
+  </body>
+  <script src="modal.js"></script>
+  <script src="nav.js"></script>
+</html>

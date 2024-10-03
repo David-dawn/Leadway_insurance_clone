@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pre Loss Inspection</title>
+    <link rel="stylesheet" href="Nav.css" />
+    <link rel="stylesheet" href="/css/request.css" />
+    <link rel="stylesheet" href="/css/modal.css" />
+    <script
+      src="https://kit.fontawesome.com/96fccda491.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="NavHeader">
+      
+      <span id="toggle-btn" class="toggle-btn">&#9776;</span>
+      
+      <nav id="mySidenav" class="aside-nav">
+        <a href="javascript:void(0)" class="closebtn">&times;</a>
+        <div id="nav-icons-container" class="nav-icons-container">
+          <ul>
+            <li>
+              <a href="#"
+                ><img class="navIcons" src="/image/barcode-vector.png" alt=""
+              /></a>
+            </li>
+            <li class="BgWhite">
+              <a href="#"
+                ><img class="navIcons" src="/image/reg-Vector.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="navIcons" src="/image/bag-Vector.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="navIcons" src="/image/icons.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="navIcons" src="/image/pie-chart-2.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img class="navIcons" src="/image/setting-vector.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="logo">
+          <a href="overview.html">
+            <img
+              class="leadwayLogo"
+              src="/image/LAC Logo Alt 2.png"
+              alt="Leadway Logo"
+            />
+          </a>
+          <div class="logo-content">
+            <p>TRM</p>
+            <ul>
+              <li>
+                <a class="overview" href="overview.html" id="overview">
+                  <img
+                    src="/image/Group 126.svg"
+                    alt="overview icons"
+                    id="overviewImg"
+                  />
+                  Overview
+                </a>
+              </li>
+              <li>
+                <a href="allrequest.html" id="request">
+                  <img
+                    src="/image/Vector.svg"
+                    alt="overview icons"
+                    id="requestImg"
+                  />
+                  Request
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+     
+      <nav class="horizontal-nav">
+        <div class="horizontal-nav-container">
+          <img
+            class="notification"
+            src="/image/notification.png"
+            alt="notification icon"
+          />
+          <div class="user-initials"><p>AM</p></div>
+          <p class="acct">
+            Adesola <span><img src="/image/dropdown.png" alt="" /></span>
+          </p>
+        </div>
+      </nav>
+    </header>
+    <main class="NewInspectContainer">
+      <div class="NewHeadContent preLossHeadContent">
+        <div class="head1">
+          <h1>Create New Inspection</h1>
+          <p>See Inspections across all business classes</p>
+        </div>
+        <div class="head2p">
+          <a href="newinspect.html">
+            <i class="fa-solid fa-angle-left"></i>
+            Back to create request
+          </a>
+        </div>
+      </div>
+     
+      <section id="preLossForm">
+        <div class="formContainer">
+          <div class="formH1">
+            <p>Pre-Loss Link Generation</p>
+          </div>
+          <div class="formDiv">
+            <form action="" id="inspectForm">
+            
+              <div class="group">
+               -
+                <div class="form-group">
+                  <label for="username">Policy Number(optional)</label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-magnifying-glass i"></i>
+                    <input type="text" id="username" name="username" />
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="group group1">
+               
+                <div class="form-group">
+                  <label for="username">Client First Name</label>
+                  <div class="input-wrapper">
+                    <input type="text" id="username" name="username" />
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="username">Client Last name</label>
+                  <div class="input-wrapper">
+                    <input type="text" id="username" name="username" />
+                  </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="clientPhone">Client Phone Number</label>
+                    <div class="input-wrapper">
+                        <p class="country-code">+234</p>
+                        <input type="tel" id="clientPhone" name="clientPhone" placeholder="8012345678" maxlength="10" required />
+                        <small id="phoneError" style="color: red; display: none;">Please enter a valid phone number.</small>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="form-group">
+                  <label for="username">Client Email address</label>
+                  <div class="input-wrapper">
+                    <input type="email" id="username" name="username" />
+                  </div>
+                </div>
+              </div>
+
+              
+              <div class="group group1">
+              
+                <div class="form-group">
+                  <label for="username">Vehicle make</label>
+                  <div class="input-wrapper">
+                    <select class="custom-select" id="customSelect">
+                      <option value="motors">Select a language</option>
+                    </select>
+                  </div>
+                </div>
+               
+                <div class="form-group">
+                  <label for="username">Vehicle model</label>
+                  <div class="input-wrapper">
+                    
+                    <input type="text" id="username" name="username" />
+                  </div>
+                </div>
+                
+                <div class="form-group">
+                  <label for="username">Registration number</label>
+                  <div class="input-wrapper">
+                   
+                    <input type="text" id="username" name="username" />
+                  </div>
+                </div>
+               
+                <div class="form-group">
+                  <label for="username">Year</label>
+                  <div class="input-wrapper">
+                    <select class="custom-select" id="customSelect">
+                      <option value="motors">Select a language</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="group group2">
+                <div class="form-group">
+                  <label for="username">Comments</label>
+                  <div class="textarea">
+                    <textarea name="desc" id="desc"></textarea>
+                    <p>Attach document</p>
+                  </div>
+               
+                </div>
+              </div>
+              <div class="SubmitDiv">
+                <button class="Buttonn show-modal" id="btn">Generate</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="modal1">
+      
+
+        <div class="modal hidden">
+          <h1 class="info-h1">Send to TRM</h1>
+          <p class="info-text">Are you sure you want to send this request?</p>
+          <div class="aDiv">
+            <a href="#" class="aColor close-modal">Cancel</a>
+            <a href="#" class="abtn SuccessModal">Submit</a>
+          </div>
+        </div>
+
+        <div class="overlay hidden"></div>
+      </section>
+     
+      <section id="modal2">
+      
+
+        <div class="modal2 hidden">
+          <div class="">
+            <button class="close-modal2 close">&times;</button>
+          </div>
+
+          <img
+            src="/image/Group 383.png"
+            alt="congratulation"
+            class="congrat"
+          />
+
+          <p class="info">
+            You’ve successfully created new <br />
+            Inspection ID-23321 for PRIME GARDENS
+          </p>
+          <div class="aDiv">
+            <a class="aBtnGray" href="allrequest.html">Go to request list</a>
+            <a class="abtn" href="newinspect.html">Create New Inspection</a>
+          </div>
+        </div>
+
+        <div class="overlay2 hidden"></div>
+      </section>
+    </main>
+  </body>
+  <script src="modal.js"></script>
+  <script src="nav.js"></script>
+</html>

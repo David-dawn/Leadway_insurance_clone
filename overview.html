@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link rel="stylesheet" href="Nav.css">
+    <link rel="stylesheet" href="overview.css">
+    <script
+    src="https://kit.fontawesome.com/96fccda491.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+    <header class="NavHeader">
+        <!-- Toggle button for mobile view -->
+        <span id="toggle-btn" class="toggle-btn">&#9776;</span>
+        <!-- Aside Nav -->
+        <nav id="mySidenav" class="aside-nav">
+          <a href="javascript:void(0)" class="closebtn"
+            >&times;</a
+          >
+          <div id="nav-icons-container" class="nav-icons-container">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    class="navIcons"
+                    src="/image/barcode-vector.png"
+                    alt=""
+                /></a>
+              </li>
+              <li class="BgWhite">
+                <a href="#"
+                  ><img class="navIcons" src="/image/reg-Vector.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img class="navIcons" src="/image/bag-Vector.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img class="navIcons" src="/image/icons.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="navIcons"
+                    src="../img/NavIcons/pie-chart-2.png"
+                    alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="navIcons"
+                    src="/image/setting-vector.png"
+                    alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="logo">
+                <a href='overview.html'>
+                    <img
+                    class="leadwayLogo"
+                    src="/image/LAC Logo Alt 2.png"
+                    alt="Leadway Logo"
+                    /> 
+                </a>
+                <div class="logo-content">
+                    <p>TRM</p>
+                    <ul>
+                    <li>
+                        <a class='overview' href='overview.html' id='overview'>
+                        <img src="/image/Group 126.svg" alt="overview icons" id="overviewImg">
+                        Overview
+                        </a>
+                    </li>
+                    <li>
+                        <a class='requestImg' href='allrequest.html' id='request'>
+                        <img src="/image/Vector.svg" alt="overview icons" id="requestImg">
+                        Request
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+          </div>
+        </nav>
+        <!-- Horizontal Nav //notification, profile & acct profile -->
+        <nav class="horizontal-nav">
+          <div class="horizontal-nav-container">
+            <img
+              class="notification"
+              src="/image/notification.png"
+              alt="notification icon"
+              />
+            <div class="user-initials"><p>AM</p></div>
+            <p class="acct">
+                Adesola <span><img src="/image/dropdown.png" alt="" /></span>
+            </p>
+          </div>
+        </nav>
+      </header>
+    <main class="overviewContainer">
+        <!-- head div/section -->
+        <div class="headDiv">
+            <div class="headContent">
+                <h1>Welcome,<span> Olufemi</span></h1>
+                <p>Take a look at your dashboard and see all pending tasks</p>
+            </div>
+            <div class="aDiv">
+                <a class='abtn' href='newinspect.html'>
+                    <i class="fa-solid fa-plus" ></i>
+                    &nbsp;Create New Inspection
+                </a>
+            </div>
+        </div>
+        <!-- middle section  -->
+         <!-- cards div -->
+        <div class="cardsDiv">
+            <div class="cards blue">
+                <div class="card-circle card-circle-left"></div>
+                <div class="card-circle card-circle-right"></div>
+                <p>All Requests</p>
+                <span>
+                    <img src="/image/Vector.png" alt="click">
+                    32
+                </span>
+            </div>
+            <div class="cards green">
+                <div class="card-circle card-circle-left"></div>
+                <div class="card-circle card-circle-right"></div>
+                <p>Completed Requests</p>
+                <span>
+                    <img src="/image/Vector.png" alt="click">
+                    114
+                </span>
+            </div>
+            <div class="cards yellow">
+                <div class="card-circle card-circle-left"></div>
+                <div class="card-circle card-circle-right"></div>
+                <p>Ongoing Requests</p>
+                <span>
+                    <img src="/image/Vector.png" alt="click">
+                    19
+                </span>
+            </div>
+            <div class="cards red">
+                <div class="card-circle card-circle-left"></div>
+                <div class="card-circle card-circle-right"></div>
+                <p>Delayed Requests</p>
+                <span>
+                    <img src="/image/Vector.png" alt="click">
+                    19
+                </span>
+            </div>
+        </div>
+        <!-- side div -->
+        <div class="infoDiv">
+            <!-- head content in the information div -->
+            <div class="headInfoDiv">
+                <h4>Activity</h4>
+                <a href="#">
+                    View All 
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+            <!-- the other content in the information div -->
+            <div class="pInfoDiv">
+                <div class="pContent">
+                    <p>You have a property inspection coming up in three days</p>
+                    <a href="#" class="aColor">Set reminder</a>
+                </div>
+                <div class="pContent">
+                    <p>Mustapha Onasanya sent a new property inspection for Rovenheight homes</p>
+                    <a href="#" class="aColor">See inspection</a>
+                </div>
+                <div class="pContent">
+                    <p>Your scheduled inspection for Gig Logistics is three days overdue</p>
+                    <a href="#" class="aColor">Re-schedule now</a>
+                </div>
+                <div class="pContent">
+                    <p>Mustapha Onasanya sent a new property inspection for Rovenheight homes</p>
+                    <a href="#" class="aColor">See inspection</a>
+                </div>
+                <!-- <hr /> -->
+            </div>
+        </div>
+        <!-- table section -->
+         <div class="tableContainerDiv">
+            <div class="tableHeadDiv">
+                <h4>Created Inspections</h4>
+                <a href="#">
+                    View All 
+                    <i class="fa-solid fa-angle-right"></i>
+                </a>
+            </div>
+            <div class="tableDiv">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>
+                                ID
+                                <img src="image/Group 18.png" alt="arrow up and down">
+                            </th>
+                            <th>
+                                Name
+                                <img src="image/Group 18.png" alt="arrow up and down">
+                            </th>
+                            <th>
+                                Class
+                                <img src="image/Group 18.png" alt="arrow up and down">
+                            </th>
+                            <th>
+                                Inspection method
+                                <img src="image/Group 18.png" alt="arrow up and down">
+                            </th>
+                            <th>
+                                Officer
+                                <img src="image/Group 18.png" alt="arrow up and down">
+                            </th>
+                            <th>
+                                Status
+                                <img src="image/Group 18.png" alt="arrow up and down">
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10321</td>
+                            <td>GIG Logistics</td>
+                            <td class="class">
+                                <div class="classDiv">
+                                    <div class="roundClass blue1"></div>
+                                    Marine
+                                </div>
+                            </td>
+                            <td>Digital</td>
+                            <td>Mustapha Onasanya</td>
+                            <td class="statusText">QUOTE REQUEST</td>
+                        </tr>
+                        <tr>
+                            <td>10321</td>
+                            <td>Shoprite Stores</td>
+                            <td class="class">
+                                <div class="classDiv">
+                                    <div class="roundClass blue2"></div>
+                                    Property
+                                </div>
+                            </td>
+                            <td>Manual</td>
+                            <td>Mustapha Onasanya</td>
+                            <td>
+                                <div class="complete boxes">
+                                    Completed
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10321</td>
+                            <td>Abiodun Abayomi</td>
+                            <td class="class">
+                                <div class="classDiv">
+                                    <div class="roundClass orange"></div>
+                                    Motors
+                                </div>
+                            </td>
+                            <td>Digital</td>
+                            <td>Mustapha Onasanya</td>
+                            <td>
+                                <div class="ongoing boxes">Ongoing</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10321</td>
+                            <td>Ben’s Agro Allied</td>
+                            <td class="class">
+                                <div class="classDiv">
+                                    <div class="roundClass green"></div>
+                                    Agric
+                                </div>
+                            </td>
+                            <td>Manual</td>
+                            <td>Mustapha Onasanya</td>
+                            <td class="statusText">SENT TO ENGINEER</td>
+                        </tr>
+                        <tr>
+                            <td>10321</td>
+                            <td>Abiodun Abayomi</td>
+                            <td class="class">
+                                <div class="classDiv">
+                                    <div class="roundClass lightYellow"></div>
+                                    Bond
+                                </div>
+                            </td>
+                            <td>Digital</td>
+                            <td>Mustapha Onasanya</td>
+                            <td>
+                                <div class="linkExpire boxes">
+                                    <i class="fa-solid fa-xmark"></i>
+                                    Link expired
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10321</td>
+                            <td>Julius Berger</td>
+                            <td class="class">
+                                <div class="classDiv">
+                                    <div class="roundClass red"></div>
+                                    Engineering
+                                </div>
+                            </td>
+                            <td>Digital</td>
+                            <td>Mustapha Onasanya</td>
+                            <td>
+                                <div class="inspectionLink boxes">
+                                    <img src="/image/turn-left.png" alt="arrow backword icon">
+                                    Inspection link
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10321</td>
+                            <td>Abiodun Abayomi</td>
+                            <td class="class">
+                                <div class="classDiv">
+                                    <div class="roundClass green"></div>
+                                    Marine
+                                </div>
+                            </td>
+                            <td>Digital</td>
+                            <td>Mustapha Onasanya</td>
+                            <td>
+                                <div class="complete boxes">
+                                    Completed
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         </div>
+    </main>
+</body>
+<script src="overview.js"></script>
+<script src="nav.js"></script>
+</html>
